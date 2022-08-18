@@ -83,7 +83,7 @@ Step04: Now enter the anime details in the forum and click "Create Anime"<br>
 
 
 ## Testing - How to run them
-Coverage: 84%
+Coverage: 87%
 
 Once all Prerequisites have been complete you gain access to the testing feature through the src/test/java.<br>
 - Select folder with right click.
