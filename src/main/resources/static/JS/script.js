@@ -50,7 +50,8 @@ let create = () => {
     .then(res => {
         getAll();
 
-    }).catch(err => {console.log(err)}); 
+    })
+    .catch(err => {console.log(err)}); 
 }
 
 let update = () => {
