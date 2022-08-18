@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 //import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
-//@EnableWebMvc - remove this after screenshotting swagger information. also add swagger dependency
+//@EnableWebMvc
 @SpringBootApplication
 public class JuneEnableSpringApplication {
 
