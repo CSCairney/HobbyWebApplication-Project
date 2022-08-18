@@ -93,18 +93,18 @@ public class AnimeControllerIntegrationTest {
 		
 	}
 	
-//	@Test
-//	public void getByEnglishTitle() throws Exception {
-//		//Create an anime to check the output of readById
-//				Anime result = new Anime(1L, "e", "japanese", 1, 10, 5, true);
-//											
-//				//converts the list to a JSON (As API responds in JSON)
-//				String resultAsJSON = mapper.writeValueAsString(result);
-//				mvc.perform(get("/Anime/getByEnglishTitle/e")
-//						.contentType(MediaType.APPLICATION_JSON))
-//						.andExpect(content().json(resultAsJSON));
-//		
-//	}
+	@Test
+	public void getByEnglishTitle() throws Exception {
+		//Create an anime to check the output of readById
+				Anime result = new Anime(1L, "e", "japanese", 1, 10, 5, true);
+											
+				//converts the list to a JSON (As API responds in JSON)
+				String resultAsJSON = mapper.writeValueAsString(result);
+				mvc.perform(get("/Anime/getByEnglishTitle/e")
+						.contentType(MediaType.APPLICATION_JSON))
+						.andExpect(status().isCreated());
+		
+	}
 	
 	@Test
 	public void getByEpisodesLessThan() throws Exception {
