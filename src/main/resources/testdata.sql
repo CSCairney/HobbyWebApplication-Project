@@ -1,0 +1,1 @@
+INSERT INTO `anime`(`english_title`, `japanese_title`, `seasons`, `episodes`, `rating`, `complete`) VALUES ('english', 'japanese', 1, 10, 5, true);
