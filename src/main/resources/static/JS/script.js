@@ -47,11 +47,11 @@ let create = () => {
         
     }
     axios.post("http://localhost:8080/Anime/create", obj)
-    .then(res => {
+    .then(() => {
         getAll();
 
     })
-    .catch(err => {console.log(err)}); 
+    .catch(err => {console.log(err); }) 
 }
 
 let update = () => {
@@ -68,7 +68,7 @@ let update = () => {
     }
 
     axios.put(`http://localhost:8080/Anime/update/${idInput.value}`, obj)
-    .then(res => {
+    .then(() => {
         getAll();
     })
     .catch((err) => { console.log(err); })
